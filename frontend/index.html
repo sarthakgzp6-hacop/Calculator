@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <h1>Welcome To My Calculator</h1>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="4" id="input" class="right"></td>></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4" id="output" class="right"></td>
+                </tr>
+                <tr>
+                    <td><button 
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '+'
+                            "
+                        >+</button></td>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '-'
+                            "
+                        >-</button></td>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '*'
+                            "
+                        >X</button></td>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '/'
+                            "
+                        >/</button></td>
+                </tr>
+                <tr>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '9'
+                            "
+                        >9</button></td>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '8'
+                            "
+                        >8</button></td>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '7'
+                            "
+                        >7</button></td>
+                    <td><button
+                        onclick="
+                            let returnValue = eval(document.querySelector('#input').textContent);
+                            let current = document.querySelector('#input');
+                            current.textContent = returnValue
+                            "
+                        >=</button></td>
+                </tr>
+                <tr>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '6'
+                            "
+                        >6</button></td>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '5'
+                            "
+                        >5</button></td>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '4'
+                            "
+                        >4</button></td>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '.'
+                            "
+                        >.</button></td>
+                </tr>
+                <tr>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '3'
+                            "
+                        >3</button></td>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '2'
+                            "
+                        >2</button></td>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '1'
+                            "
+                        >1</button></td>
+                    <td><button
+                        onclick="
+                            let current = document.querySelector('#input');
+                            current.textContent = current.textContent + '0'
+                            "
+                        >0</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
